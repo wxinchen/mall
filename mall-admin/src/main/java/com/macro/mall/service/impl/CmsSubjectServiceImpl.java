@@ -33,6 +33,7 @@ public class CmsSubjectServiceImpl implements CmsSubjectService {
         if (!StringUtils.isEmpty(keyword)) {
             criteria.andTitleLike("%" + keyword + "%");
         }
+        System.out.printf("dsfdsf");
         return subjectMapper.selectByExample(example);
     }
 }
